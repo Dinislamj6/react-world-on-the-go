@@ -4,13 +4,27 @@
     gap: 20px;
 }
 .visited-flags-container img{
-     width: 120px;
+     width: 100px;
      margin-right: 10px;
+     
+}
+.visited-flags-container{
+    background-color: #1C352D;
+    width: 1000px;
+    border: 10px;
+}
+body{
+    background-color: #507687;
+}
+
+*{
+  max-width: 1280px;
+  margin: 0 auto;  
 }
 
 @media (max-width: 600px) {
     .countries{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
     }
 }

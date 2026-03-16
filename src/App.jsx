@@ -13,7 +13,7 @@ function App() {
   return (
     <>
 
-      <Suspense fallback={<p>Nadir vhi loading.....</p>}>
+      <Suspense  fallback={<h2 style={{textAlign: "center"}}>Data Loading.........</h2>}>
             <Countries countriesPromise={countriesPromise}></Countries>
       </Suspense>
      

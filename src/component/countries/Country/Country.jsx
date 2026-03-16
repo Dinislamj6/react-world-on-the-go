@@ -33,8 +33,8 @@ const Country = ({country,handelVisitedCountries, handelVisitedFlag}) => {
             <p>Population : {country.population.population}</p>
             <p>Capital :{country.capital.capital[0]}</p>
             <p>Area : {country.area.area} {country.area.area > 300000? "big country":"small country"}</p>
-            <button onClick={handelVisited}>{visited? "visited": "not visited"}</button>
-            <button onClick={() => { handelVisitedFlag(country.flags.flags.png)}}>Add Visited Flag</button>
+            <button className='btn-style' onClick={handelVisited}>{visited? "visited": "not visited"}</button>
+            <button className='btn2-style' onClick={() => { handelVisitedFlag(country.flags.flags.png)}}>Add Visited Flag</button>
           
         </div>
     );
